@@ -9,16 +9,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.TimeZone;
 
 import static org.junit.Assert.assertEquals;
@@ -47,7 +42,7 @@ public class CompensationServiceImplTest {
     }
 
     @Test
-    public void testCreateReadUpdate() throws ParseException {
+    public void testCreateRead() throws ParseException {
         Compensation testCompensation = new Compensation();
         testCompensation.setEmployeeId("03aa1462-ffa9-4978-901b-7c001562cf6f");
         testCompensation.setSalary(60000.50D);

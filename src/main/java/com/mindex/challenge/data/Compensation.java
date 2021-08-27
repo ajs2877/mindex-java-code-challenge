@@ -17,7 +17,7 @@ public class Compensation {
         this.employeeId = employeeId;
     }
 
-    public String getEmployeeId(){
+    public String getEmployeeId() {
         return this.employeeId;
     }
 
